@@ -112,3 +112,127 @@ header h1 {
 .tabela-dados tr:hover td {
     background-color: #4C566A;
 }
+
+/* Personalização da barra de rolagem */
+.tabela-dados::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.tabela-dados::-webkit-scrollbar-track {
+    background: #2E3440;
+    border-radius: 10px;
+}
+
+.tabela-dados::-webkit-scrollbar-thumb {
+    background-color: #446DF6;
+    border-radius: 10px;
+    border: 2px solid #2E3440;
+}
+
+.tabela-dados::-webkit-scrollbar-thumb:hover {
+    background-color: #3453B7;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    body{
+        flex-direction: column;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .menu h2 {
+        font-size: 1.2em;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .tabela-card {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .tabela-dados {
+        width: 100%;
+        overflow-x: auto;
+        margin-top: 10px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabela-dados th,
+    .tabela-dados td {
+        padding: 10px;
+    }
+
+    .tabela-card:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        flex-direction: column;
+    }
+    
+    .menu {
+        padding: 10px;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .menu h2 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .tabela-card {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .dados-secao {
+        padding: 10px;
+    }
+
+    .tabela-dados {
+        width: 100%;
+        overflow-x: auto;
+        margin-top: 10px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabela-dados th,
+    .tabela-dados td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .tabela-card:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
