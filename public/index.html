@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Banco de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="menu">
+            <h2>Tabelas do Banco</h2>
+            <nav id="tabelas" class="tabelas-lista">
+                <!-- Tabelas irão aparecer aqui dinamicamente -->
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1 id="titulo-tabela">Veiculos</h1>
+            </header>
+            <section id="dados" class="dados-secao">
+                <table id="conteudo-dados" class="tabela-dados"></table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
